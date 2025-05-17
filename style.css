@@ -1,0 +1,106 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #dad8d8;
+}
+
+.screen {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.screen--blue {
+  background-color: #1e73be;
+  color: white;
+}
+
+/* Блок header */
+.header__content {
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.header__image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Блок about */
+.about__content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about__image {
+  max-width: 100%;
+  height: auto;
+  width: 800px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about__description {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Блок video */
+.video__content {
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.video__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video__frame {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+  .header__title,
+  .about__title,
+  .video__title {
+    font-size: 1.8rem;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+
+  .video__frame {
+    height: auto;
+  }
+}
